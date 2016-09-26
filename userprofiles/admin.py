@@ -27,25 +27,7 @@ class CustomUserAdmin(UserAdmin):
                     #'is_staff',
                     #'is_active',
                     #'is_superuser',
-                    'is_player',
-                    'position',
-                    'team',
-                    'weight',
-                    'height',
-                    'nickname',
-                    'number_matches',
-                    'accomplished_matches',
-                    'time_available',
-                    'leg_profile',
-                    'number_shirt_preferred',
-                    'team_support',
-                    'player_preferred',
-
-
-
-
                     #'last_login',
-
                     #'date_joined',
 
                 )
@@ -60,8 +42,5 @@ class UserAdmin(CustomUserAdmin):
     # list_display = ('photo',)
 
 
-    list_display = ('username','password','first_name','last_name','age','sex', 
-        'photo','email','is_player','position','is_staff','is_active','is_superuser',
-        'is_player','weight','nickname','number_matches','accomplished_matches',
-        'time_available','leg_profile','number_shirt_preferred','team_support',
-        'player_preferred','last_login',)
+    list_display = ('username','password','first_name','last_name','age','sex',
+        'photo','email','is_staff','is_active','is_superuser','last_login',)
